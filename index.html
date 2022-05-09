@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <nav>
+    <!-- <nav>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -25,159 +25,58 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">Other</a></li>
         </ul>
-    </nav>
+    </nav> -->
     
     <section class="hero">
-        <h1>Hi, my name is <span class="title-name">Mark</span><br> I am a front-end dedveloper</h1>
-        <a href="#" class="hero-link">View my work</a>
+        <h1><span class="title-name">Front-end</span> and <span class="title-name">Design</span></h1>
+        <div class="btn-box hover-underline-animation-white">
+            <i class="fa-solid fa-arrow-right arrow"></i>
+            <a href="#" class=" view-work-btn">View my work</a>
+            <i class="fa-solid fa-arrow-left arrow"></i>
+        </div>
+        
     </section>
     <section class="about">
-        <h2>About</h2>
-        <div class="underline"></div>
-        <div class="container">
-            <div class="item">
-                <div class="hexagon-wrapper">
-                    <div class="hexagon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                </div>
-                <h3>Clean code</h3>
-                <p class="descritpion">My priority is to write efficient and readeable code.</p>
-            </div>
-            <div class="item">
-                <div class="hexagon-wrapper">
-                    <div class="hexagon">
-                        <i class="fa-solid fa-hourglass"></i>
-                    </div>
-                </div>
-                <h3>Problem solver</h3>
-                <p class="descritpion">No matter the problem there is always a solution</p>
-            </div>
-            <div class="item">
-                <div class="hexagon-wrapper">
-                    <div class="hexagon">
-                        <i class="fa-solid fa-book"></i>
-                    </div>
-                </div>
-                <h3>Learner</h3>
-                <p class="descritpion">Always learning new languages for better websites.</p>
-            </div>
-            <div class="item">
-                <div class="hexagon-wrapper">
-                    <div class="hexagon">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                </div>
-                <h3>Adaptive</h3>
-                <p class="descritpion">Always adapting to change or uprising trends.</p>
+        <h2>Hi, I am Marek Kadlec</h2>
+        <h4>I am a self-taught front-end developer from Slovakia. I make simple yet outstading websites. I always learn new technologies and make sure my client gets the best website possible.</h4>
+        <p>
+            Want to work together?
+            <a href="mailto:marklukekadlec@gmail.com" class="hover-underline-animation-white contact" id="contact">Contact me!</a>
+        </p>
+        <div class="projects">
+            <h2>My projects:</h2>
+            <div class="projects-links">
+                <ul>
+                    <li>
+                        <a href="#" class="project-link hover-underline-animation-light-grey " >Example link #1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-link hover-underline-animation-light-grey " >Example link #2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-link hover-underline-animation-light-grey " >Example link #3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-link hover-underline-animation-light-grey " >Example link #4</a>
+                    </li>
+                    <li>
+                        <a href="#" class="project-link hover-underline-animation-light-grey " >Example link #1</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="profile">
-                <div class="photo">
-                    <img src="./img/IMG_4691.jpg" alt="photo-of-me">
-                </div>
-                <div class="text-content">
-                    <h3>Who am I?</h3>
-                    <p>My name is Mark, I am a <strong>front-end developer </strong> from <strong>Slovakia</strong>. </p>
-                </div>  
-            </div>
-            <div class="quote-stats">
-                <q>One learns from books and example only that certain things can be done. Actual learning requires that you do those things.</q>
-                <div class="stats">
-                    <div class="language-stat">
-                        <div class="stat-name"><span>HTML 5</span></div>
-                        <div class="stat-bar html"></div>
-                        <div class="percent">80%</div>
-                    </div>
-                    <div class="language-stat">
-                        <div class="stat-name"><span>CSS</span></div>
-                        <div class="stat-bar css"></div>
-                        <div class="percent">60%</div>
-                    </div>
-                    <div class="language-stat">
-                        <div class="stat-name"><span>JS</span></div>
-                        <div class="stat-bar js"></div>
-                        <div class="percent">50%</div>
-                    </div>
-                    <div class="language-stat">
-                        <div class="stat-name"><span>Python</span></div>
-                        <div class="stat-bar python"></div>
-                        <div class="percent">20%</div>
-                    </div>
-                </div>      
-                
+        <div class="social-media">
+            <h2 style="white-space: nowrap;">Wanna be friends?</h2>
+            <div class="row">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-dev"></i>
             </div>
         </div>
     </section>
-    <!-- <section class="projects">
-        <h2>My projects:</h2>
-        <div class="row">
-            <div class="project">
-                <div class="content">
-                    <h3 class="project-title">Tic tac toe</h3>
-                    <p>Play my tic tac toe game agains a simple AI.</p>
-                    <p class="languages">This project uses:</p>
-                    <div class="language-icons">
-                        <i class="icon fa-brands fa-html5"></i>
-                        <i class="icon fa-brands fa-js-square"></i>
-                        <i class="icon fa-brands fa-css3-alt"></i>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-action-button">View web</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="content">
-                    <h3 class="project-title">Tic tac toe</h3>
-                    <p>Play my tic tac toe game agains a simple AI.</p>
-                    <p class="languages">This project uses:</p>
-                    <div class="language-icons">
-                        <i class="icon fa-brands fa-html5"></i>
-                        <i class="icon fa-brands fa-js-square"></i>
-                        <i class="icon fa-brands fa-css3-alt"></i>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-action-button">View web</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="content">
-                    <h3 class="project-title">Tic tac toe</h3>
-                    <p>Play my tic tac toe game agains a simple AI.</p>
-                    <p class="languages">This project uses:</p>
-                    <div class="language-icons">
-                        <i class="icon fa-brands fa-html5"></i>
-                        <i class="icon fa-brands fa-js-square"></i>
-                        <i class="icon fa-brands fa-css3-alt"></i>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-action-button">View web</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="content">
-                    <h3 class="project-title">Tic tac toe</h3>
-                    <p>Play my tic tac toe game agains a simple AI.</p>
-                    <p class="languages">This project uses:</p>
-                    <div class="language-icons">
-                        <i class="icon fa-brands fa-html5"></i>
-                        <i class="icon fa-brands fa-js-square"></i>
-                        <i class="icon fa-brands fa-css3-alt"></i>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-action-button">View web</a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <footer>
+        <p>© Marek Kadlec 2022</p>
+    </footer>
 </body>
 </html>
