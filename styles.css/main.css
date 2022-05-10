@@ -10,13 +10,11 @@
     --grey: #202121;
     --ocean-blue: #00ADB5;
     --pastel-white: #EEEEEE;
-    --dark-ocean: #018188;
-    --light-ocean: #04c4ce;
     --light-grey: #adadad;
     --grey-text: rgb(79, 78, 77);
 }
 
-
+/*Presets*/
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -24,6 +22,12 @@ body{
     background: linear-gradient(-180deg, var(--dark-grey), var(--grey));
 }
 
+a{
+    text-decoration: none;
+    color: var(--pastel-white);
+}
+
+/*Custom scrollbar*/
 
 body::-webkit-scrollbar {
     width: .3rem;
@@ -40,11 +44,6 @@ border-radius: 15px;
 max-height: 100px;
 }
 
-
-a{
-    text-decoration: none;
-    color: var(--pastel-white)
-}
 
 /*Menu*/
 /* 
@@ -75,11 +74,6 @@ nav{
     color: var(--ocean-blue);
 } */
 
-
-/*Test hero*/
-
-
-
 /*Hero*/
 .hero{
     width: 100%;
@@ -91,18 +85,18 @@ nav{
     padding: 0 2rem;
 }
 
-.hero h1{
+.hero-title{
     font-size: clamp(1.8rem, 5vw, 3rem);
     margin-bottom: 1.3rem;
     text-align: center;
     font-weight: 400;
 }
 
-.title-name{
+.title-blue{
     color: var(--ocean-blue)
 }
 
-.view-work-btn{
+.hero-btn{
     font-size: 1.5rem;
     margin: 0 1rem;
     transition: margin .3s ease-out;
@@ -119,12 +113,10 @@ nav{
     transition: all .3s ease-out;
 }
 
-.btn-box:hover .view-work-btn{
+.btn-box:hover .hero-btn{
     color: var(--ocean-blue);
     margin: 0 .3rem;
 }
-
-
 
 /*About*/
 
@@ -135,7 +127,7 @@ nav{
     flex-direction: column;
 }
 
-.about h2{
+.about-title{
     color: var(--grey-text);
     font-weight: 400;
     font-size: 1.6rem;
@@ -143,11 +135,6 @@ nav{
     text-align: center;
     margin-bottom: 1.2rem;
     font-weight: 600;
-}
-
-.projects h2{
-    margin: 10rem 0 2rem 0;
-    white-space: nowrap;
 }
 
 .projects{
@@ -158,7 +145,14 @@ nav{
     align-items: center;
 }
 
-.about h4{
+.projects-title{
+    margin: 10rem 0 2rem 0;
+    white-space: nowrap;
+    color: var(--grey-text);
+    font-size: 1.6rem;
+}
+
+.about-descritption{
     color: var(--grey-text);
     line-height: 1.8rem;
     text-align: center;
@@ -180,7 +174,7 @@ nav{
     transition: all .3s ease;
 }
 
-.projects-links ul{
+.projects-list{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,7 +191,13 @@ nav{
     margin-top: 10rem;
 }
 
-.row{
+.social-media-title{
+    margin-bottom: 1.2rem;
+    color: var(--grey-text);
+    font-size: 1.6em;
+}
+
+.icons-row{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,11 +207,17 @@ nav{
 .fa-brands{
     color: rgb(153, 153, 153);
     font-size: 2rem;
+    cursor: pointer;
+    transition: color .3s ease;
 }
 
 .fa-brands:hover{
     color: var(--ocean-blue)
 }
+
+
+
+/*Hover line animations*/
 
 .hover-underline-animation-white {
     display: inline-block;
@@ -241,8 +247,6 @@ nav{
     transform-origin: bottom left;
   }
 
-
-
 .hover-underline-animation-light-grey {
     display: inline-block;
     position: relative;
@@ -271,6 +275,9 @@ nav{
     transform-origin: bottom left;
   }
 
+
+/*Footer*/
+
 footer{
     display: flex;
     justify-content: center;
@@ -278,6 +285,18 @@ footer{
 }
 
 footer p{
-    color: rgb(153, 153, 153);;
+    color: rgb(153, 153, 153);
     margin: 5rem 0 1rem 0 ;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 568px){
+    .about-descritption{
+        max-width: 75%;
+    }
+    .about-title{
+        max-width: 75%;
+    }
 }
