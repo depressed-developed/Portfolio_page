@@ -233,7 +233,7 @@ nav{
 
 /*Taking care of links getting stuck on hover on mobile devices*/
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer:) {
     .hover-underline-animation-white:hover{
         color: var(--ocean-blue);
     }
@@ -274,11 +274,11 @@ nav{
   
 
 
-.hover-underline-animation-light-grey {
-    display: inline-block;
-    position: relative;
-    color: rgb(153, 153, 153);
-  }
+    .hover-underline-animation-light-grey {
+        display: inline-block;
+        position: relative;
+        color: rgb(153, 153, 153);
+    }
 
  
 
