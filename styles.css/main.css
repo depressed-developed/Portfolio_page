@@ -165,6 +165,7 @@ nav{
 .about p{
     color: var(--grey-text);
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .project-link{
