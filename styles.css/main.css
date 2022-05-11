@@ -113,10 +113,7 @@ nav{
     transition: all .3s ease-out;
 }
 
-.btn-box:hover .hero-btn{
-    color: var(--ocean-blue);
-    margin: 0 .3rem;
-}
+
 
 /*About*/
 
@@ -223,15 +220,14 @@ nav{
 
 /*Hover line animations*/
 
+
 .hover-underline-animation-white {
     display: inline-block;
     position: relative;
     color: var(--pastel-white);
   }
 
-  .hover-underline-animation-white:hover{
-      color: var(--ocean-blue);
-  }
+  
 
   .hover-underline-animation-white:after {
     content: '';
@@ -246,10 +242,7 @@ nav{
     transition: transform 0.25s ease-out;
   }
   
-.hover-underline-animation-white:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+
 
 .hover-underline-animation-light-grey {
     display: inline-block;
@@ -257,9 +250,7 @@ nav{
     color: rgb(153, 153, 153);
   }
 
-  .hover-underline-animation-light-grey:hover{
-      color: var(--ocean-blue);
-  }
+ 
 
   .hover-underline-animation-light-grey:after {
     content: '';
@@ -274,11 +265,33 @@ nav{
     transition: transform 0.25s ease-out;
   }
   
-.hover-underline-animation-light-grey:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 
+/*Taking care of links getting stuck on hover on mobile devices*/
+
+@media (hover: hover) {
+    .hover-underline-animation-white:hover{
+        color: var(--ocean-blue);
+    }
+
+    .hover-underline-animation-white:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .hover-underline-animation-light-grey:hover{
+        color: var(--ocean-blue);
+    }
+
+    .hover-underline-animation-light-grey:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .btn-box:hover .hero-btn{
+        color: var(--ocean-blue);
+        margin: 0 .3rem;
+    }
+}
 
 /*Footer*/
 
